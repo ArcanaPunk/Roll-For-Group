@@ -82,23 +82,23 @@
         <span class="icon-bar"></span>
       </button>
 
-      <a class="navbar-brand" href="home_page_template.html">Roll For Group</a>
+      <a class="navbar-brand" href="home.php">Roll For Group</a>
 
     </div>
 
     <div class="collapse navbar-collapse" id="myNavbar">
 
       <ul class="nav navbar-nav">
-        <li><a href="players_page_template.html">Players</a></li>
-        <li><a href="group_page_template.html">Groups</a></li>
+        <li><a href="players.php">Players</a></li>
+        <li><a href="group.php">Groups</a></li>
         <li><a href="#">Messages</a></li>
         <li><a href="#">About</a></li>
       </ul>
 
-      <!-- Login and Profile Button -->
+     <!-- Login and Profile Button -->
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
-        <li><a href="login_page_template.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       </ul>
     </div>
 
@@ -116,51 +116,29 @@
     <div class="col-sm-8 text-left"> 
       <form>
         <fieldset>
-          <legend>Sign Up</legend>
-            <p>
-              <label>Username:</label>
-              <input type="text" name="user_name"/><br/>
+          <legend>Login</legend>
 
-              <label>Password:</label>
-              <input type="password" name="pass_word"/><br/>
+          <p>
+            <label>Username:</label>
+            <input type="text" name="user_name"/><br/>
+            <label>Password:</label>
+            <input type="password" name="pass_word"/><br/><br/>
+            <input type="submit" value="Submit"/>
+          </p>
 
-              <label>Confirm Password:</label>
-              <input type="password" name="pass_word_confirm"/><br/>
-
-              <label>First Name:</label>
-              <input type="text" name="first_name"/><br/>
-
-              <label>Last Name:</label>
-              <input type="text" name="last_name"/><br/>
-
-              <label>Address:</label>
-              <input type="text" name="street_address"><br/>
-
-              <label>City:</label>
-              <input type="text" name="city_address"><br/>
-
-              <label>State:</label>
-              <input type="text" name="state_address" value="Full State Name"><br/>
-
-              <label>Zip Code:</label>
-              <input type="text" name="zip_address"><br/><br/>
-
-              <input type="submit" value="Submit">
-            </p>
         </fieldset>
       </form>
 
       <fieldset>
-        <legend>Login</legend>
+        <legend>Sign Up</legend>
 
         <p>
-          If you already have an account, click here to login!
+          If you haven't signed up yet, click here to get started!
         </p>
 
-        <a href="login_page_template.html"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+        <a href="register.php"><span class="glyphicon glyphicon-triangle-right"></span>Sign Up</a>
 
       </fieldset>
-      
     </div>
     <div class="col-sm-2 sidenav">
       <div class="well">

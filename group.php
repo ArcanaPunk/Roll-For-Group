@@ -82,15 +82,15 @@
         <span class="icon-bar"></span>
       </button>
 
-      <a class="navbar-brand" href="home_page_template.html">Roll For Group</a>
+      <a class="navbar-brand" href="home.php">Roll For Group</a>
 
     </div>
 
     <div class="collapse navbar-collapse" id="myNavbar">
 
       <ul class="nav navbar-nav">
-        <li><a href="players_page_template.html">Players</a></li>
-        <li class="active"><a href="group_page_template.html">Groups</a></li>
+        <li><a href="players.php">Players</a></li>
+        <li class="active"><a href="group.php">Groups</a></li>
         <li><a href="#">Messages</a></li>
         <li><a href="#">About</a></li>
       </ul>
@@ -98,7 +98,7 @@
       <!-- Login and Profile Button -->
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
-        <li><a href="login_page_template.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       </ul>
     </div>
 
