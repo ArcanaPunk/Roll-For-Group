@@ -82,23 +82,24 @@
         <span class="icon-bar"></span>
       </button>
 
-      <a class="navbar-brand" href="home_page_template.html">Roll For Group</a>
+      <a class="navbar-brand" href="home.php">Roll For Group</a>
 
     </div>
 
     <div class="collapse navbar-collapse" id="myNavbar">
 
       <ul class="nav navbar-nav">
-        <li><a href="players_page_template.html">Players</a></li>
-        <li><a href="group_page_template.html">Groups</a></li>
+        <li><a href="players.php">Players</a></li>
+        <li><a href="group.php">Groups</a></li>
         <li><a href="#">Messages</a></li>
         <li><a href="#">About</a></li>
       </ul>
 
-     <!-- Login and Profile Button -->
+      <!-- Login Button -->
+      <!-- Login and Profile Button -->
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
-        <li><a href="login_page_template.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       </ul>
     </div>
 
@@ -114,31 +115,14 @@
       <p><a href="#">Link</a></p>
     </div>
     <div class="col-sm-8 text-left"> 
-      <form>
-        <fieldset>
-          <legend>Login</legend>
+      <h1>Welcome</h1>
+      <p>Roll For Group is a tabletop matchmaker. Whether you are a veteran player or someone who is looking for their first adventure we've got your back! <br/><br/>
 
-          <p>
-            <label>Username:</label>
-            <input type="text" name="user_name"/><br/>
-            <label>Password:</label>
-            <input type="password" name="pass_word"/><br/><br/>
-            <input type="submit" value="Submit"/>
-          </p>
+      Tabletop roleplaying games and new or classic board games are all welcome. <br/><br/>
 
-        </fieldset>
-      </form>
-
-      <fieldset>
-        <legend>Sign Up</legend>
-
-        <p>
-          If you haven't signed up yet, click here to get started!
-        </p>
-
-        <a href="sign_up_page_template.html"><span class="glyphicon glyphicon-triangle-right"></span>Sign Up</a>
-
-      </fieldset>
+      Sign up and find an adventure today!</p>
+      <h3>Test Home Page</h3>
+      <p>This is a test home page! Please look forward to the full release.</p>
     </div>
     <div class="col-sm-2 sidenav">
       <div class="well">
