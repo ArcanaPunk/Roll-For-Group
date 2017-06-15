@@ -1,4 +1,3 @@
-<?php include('server.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -96,9 +95,9 @@
         <li><a href="#">About</a></li>
       </ul>
 
-      <!-- Login and Profile Button -->
+     <!-- Login and Profile Button -->
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+        <li><a href="profile.html"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
         <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       </ul>
     </div>
@@ -115,61 +114,31 @@
       <p><a href="#">Link</a></p>
     </div>
     <div class="col-sm-8 text-left"> 
-      <form method="post" action="register.php">
+      <form>
         <fieldset>
-          <legend>Sign Up</legend>
-            <!-- display validation for form fields -->
-            <?php include('errors.php'); ?>
-            <p>
-              <label>Username:</label>
-              <input type="text" name="username"/><br/>
+          <legend>Login</legend>
 
-              <label>Email:</label>
-              <input type="text" name="email"/><br/>
+          <p>
+            <label>Username:</label>
+            <input type="text" name="user_name"/><br/>
+            <label>Password:</label>
+            <input type="password" name="pass_word"/><br/><br/>
+            <input type="submit" value="Submit"/>
+          </p>
 
-              <label>Password:</label>
-              <input type="password" name="password_1"/><br/>
-
-              <label>Confirm Password:</label>
-              <input type="password" name="password_2"/><br/>
-
-              <label>First Name:</label>
-              <input type="text" name="first_name"/><br/>
-
-              <label>Last Name:</label>
-              <input type="text" name="last_name"/><br/>
-
-              <label>Address:</label>
-              <input type="text" name="address"><br/>
-
-              <label>City:</label>
-              <input type="text" name="city"><br/>
-
-              <label>State:</label>
-              <input type="text" name="state" value="Full State Name"><br/>
-
-              <label>Zip Code:</label>
-              <input type="text" name="zip"><br/>
-
-              <label>Country:</label>
-              <input type="text" name="country" value="Full Country Name"><br/><br/>
-
-              <button type="submit" name="submit" class="btn">Submit</button>
-            </p>
         </fieldset>
       </form>
 
       <fieldset>
-        <legend>Login</legend>
+        <legend>Sign Up</legend>
 
         <p>
-          If you already have an account, click here to login!
+          If you haven't signed up yet, click here to get started!
         </p>
 
-        <a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+        <a href="register.php"><span class="glyphicon glyphicon-triangle-right"></span>Sign Up</a>
 
       </fieldset>
-      
     </div>
     <div class="col-sm-2 sidenav">
       <div class="well">

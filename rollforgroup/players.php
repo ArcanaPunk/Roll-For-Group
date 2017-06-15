@@ -89,15 +89,15 @@
     <div class="collapse navbar-collapse" id="myNavbar">
 
       <ul class="nav navbar-nav">
-        <li><a href="players.php">Players</a></li>
-        <li class="active"><a href="group.php">Groups</a></li>
+        <li class="active"><a href="players.php">Players</a></li>
+        <li><a href="group.php">Groups</a></li>
         <li><a href="#">Messages</a></li>
         <li><a href="#">About</a></li>
       </ul>
 
       <!-- Login and Profile Button -->
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+        <li><a href="profile.hmtl"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
         <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       </ul>
     </div>
@@ -119,80 +119,79 @@
 
     <!-- Center Body -->
     <div class="col-sm-8 text-left">
-
-      <h2>Browse Groups:</h2>
+    <h2>Browse Players:</h2>
 
       <table style="text-align: center;"">
         <tr>
           <td>
-            <img src="pictures/Group-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Group 1</h4>
+            <img src="pictures/Male-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
+            <h4>Name 1</h4>
           </td>
           <td>
-            <img src="pictures/Group-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Group 2</h4>
+            <img src="pictures/Male-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
+            <h4>Name 2</h4>
           </td>
           <td>
-            <img src="pictures/Group-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Group 3</h4>
+            <img src="pictures/Male-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
+            <h4>Name 3</h4>
           </td>
           <td>
-            <img src="pictures/Group-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Group 4</h4>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <img src="pictures/Group-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Group 5</h4>
-          </td>
-          <td>
-            <img src="pictures/Group-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Group 6</h4>
-          </td>
-          <td>
-            <img src="pictures/Group-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Group 7</h4>
-          </td>
-          <td>
-            <img src="pictures/Group-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Group 8</h4>
+            <img src="pictures/Male-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
+            <h4>Name 4</h4>
           </td>
         </tr>
         <tr>
           <td>
-            <img src="pictures/Group-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Group 9</h4>
+            <img src="pictures/Male-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
+            <h4>Name 5</h4>
           </td>
           <td>
-            <img src="pictures/Group-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Group 10</h4>
+            <img src="pictures/Male-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
+            <h4>Name 6</h4>
           </td>
           <td>
-            <img src="pictures/Group-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Group 11</h4>
+            <img src="pictures/Male-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
+            <h4>Name 7</h4>
           </td>
           <td>
-            <img src="pictures/Group-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Group 12</h4>
+            <img src="pictures/Male-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
+            <h4>Name 8</h4>
           </td>
         </tr>
         <tr>
           <td>
-            <img src="pictures/Group-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Group 13</h4>
+            <img src="pictures/Male-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
+            <h4>Name 9</h4>
           </td>
           <td>
-            <img src="pictures/Group-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Group 14</h4>
+            <img src="pictures/Male-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
+            <h4>Name 10</h4>
           </td>
           <td>
-            <img src="pictures/Group-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Group 15</h4>
+            <img src="pictures/Male-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
+            <h4>Name 11</h4>
           </td>
           <td>
-            <img src="pictures/Group-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Group 16</h4>
+            <img src="pictures/Male-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
+            <h4>Name 12</h4>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img src="pictures/Male-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
+            <h4>Name 13</h4>
+          </td>
+          <td>
+            <img src="pictures/Male-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
+            <h4>Name 14</h4>
+          </td>
+          <td>
+            <img src="pictures/Male-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
+            <h4>Name 15</h4>
+          </td>
+          <td>
+            <img src="pictures/Male-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
+            <h4>Name 16</h4>
           </td>
         </tr>
         <tr>
@@ -204,7 +203,6 @@
           </td>
         </tr>
       </table>
-
     </div>
 
     <!-- Right Sidebar -->

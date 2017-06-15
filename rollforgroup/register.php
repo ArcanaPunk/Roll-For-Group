@@ -1,3 +1,4 @@
+<?php include('server.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -95,10 +96,9 @@
         <li><a href="#">About</a></li>
       </ul>
 
-      <!-- Login Button -->
       <!-- Login and Profile Button -->
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+        <li><a href="proile.html"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
         <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       </ul>
     </div>
@@ -115,14 +115,61 @@
       <p><a href="#">Link</a></p>
     </div>
     <div class="col-sm-8 text-left"> 
-      <h1>Welcome</h1>
-      <p>Roll For Group is a tabletop matchmaker. Whether you are a veteran player or someone who is looking for their first adventure we've got your back! <br/><br/>
+      <form method="post" action="register.php">
+        <fieldset>
+          <legend>Sign Up</legend>
+            <!-- display validation for form fields -->
+            <?php include('errors.php'); ?>
+            <p>
+              <label>Username:</label>
+              <input type="text" name="username"/><br/>
 
-      Tabletop roleplaying games and new or classic board games are all welcome. <br/><br/>
+              <label>Email:</label>
+              <input type="text" name="email"/><br/>
 
-      Sign up and find an adventure today!</p>
-      <h3>Test Home Page</h3>
-      <p>This is a test home page! Please look forward to the full release.</p>
+              <label>Password:</label>
+              <input type="password" name="password_1"/><br/>
+
+              <label>Confirm Password:</label>
+              <input type="password" name="password_2"/><br/>
+
+              <label>First Name:</label>
+              <input type="text" name="first_name"/><br/>
+
+              <label>Last Name:</label>
+              <input type="text" name="last_name"/><br/>
+
+              <label>Address:</label>
+              <input type="text" name="address"><br/>
+
+              <label>City:</label>
+              <input type="text" name="city"><br/>
+
+              <label>State:</label>
+              <input type="text" name="state" value="Full State Name"><br/>
+
+              <label>Zip Code:</label>
+              <input type="text" name="zip"><br/>
+
+              <label>Country:</label>
+              <input type="text" name="country" value="Full Country Name"><br/><br/>
+
+              <button type="submit" name="submit" class="btn">Submit</button>
+            </p>
+        </fieldset>
+      </form>
+
+      <fieldset>
+        <legend>Login</legend>
+
+        <p>
+          If you already have an account, click here to login!
+        </p>
+
+        <a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+
+      </fieldset>
+      
     </div>
     <div class="col-sm-2 sidenav">
       <div class="well">
