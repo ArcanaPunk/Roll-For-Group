@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Roll For Group</title>
+  <title>Roll For Party: Home</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
@@ -82,7 +82,7 @@
         <span class="icon-bar"></span>
       </button>
 
-      <a class="navbar-brand" href="home.php">Roll For Group</a>
+      <a class="navbar-brand" href="home.php">Roll For Party</a>
 
     </div>
 
@@ -91,14 +91,14 @@
       <ul class="nav navbar-nav">
         <li><a href="players.php">Players</a></li>
         <li><a href="group.php">Groups</a></li>
-        <li><a href="#">Messages</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="viewMessages.html">Messages</a></li>
+        <li><a href="viewAbout.html">About</a></li>
       </ul>
 
-      <!-- Login Button -->
-      <!-- Login and Profile Button -->
+      <!-- My Profile and My Group Button and Login -->
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="profile.html"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+        <li><a href="profile.html"><span class="glyphicon glyphicon-user"></span> My Profile</a></li>
+        <li><a href="viewOwnGroups.html"><span class="glyphicon glyphicon-th-large"></span> My Groups</a></li>
         <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       </ul>
     </div>
@@ -108,15 +108,14 @@
   
 <div class="container-fluid text-center">    
   <div class="row content">
+
     <div class="col-sm-2 sidenav" style="height:100%">
-      <p>
-      <p><a href="#">Link</a></p>
-      <p><a href="#">Link</a></p>
-      <p><a href="#">Link</a></p>
+     
     </div>
+
     <div class="col-sm-8 text-left"> 
       <h1>Welcome</h1>
-      <p>Roll For Group is a tabletop matchmaker. Whether you are a veteran player or someone who is looking for their first adventure we've got your back! <br/><br/>
+      <p>Roll For Party is a tabletop matchmaker. Whether you are a veteran player or someone who is looking for their first adventure we've got your back! <br/><br/>
 
       Tabletop roleplaying games and new or classic board games are all welcome. <br/><br/>
 
@@ -136,7 +135,7 @@
 </div>
 
 <footer class="container-fluid text-center">
-  <p>Copywrite &copy; Roll For Group 2017</p>
+  <p>Copywrite &copy; Roll For Party 2017</p>
 </footer>
 
 </body>
