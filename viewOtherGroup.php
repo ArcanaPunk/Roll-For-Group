@@ -1,8 +1,14 @@
-<?php include('server.php'); ?>
+<?php include('server.php'); 
+
+  //Only users that are logged in can view this page
+  if (empty($_SESSION['username'])) {
+    header('location: login.php');
+  }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Roll For Group</title>
+  <title>Roll For Party: Template</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
@@ -106,42 +112,91 @@
 
   </div>
 </nav>
-  
-<div class="container-fluid text-center">    
+
+<!-- Main Body -->
+<div class="container-fluid text-center">
   <div class="row content">
-  
+
+    <!-- Left Sidebar -->
     <div class="col-sm-2 sidenav" style="height:100%">
 
     </div>
 
-    <div class="col-sm-8 text-left"> 
-      <form method="post" action="login.php">
-        <fieldset>
-          <legend>Login</legend>
-          <!-- display validation for form fields -->
-          <?php include('errors.php'); ?>
-          <p>
-            <label>Username:</label>
-            <input type="text" name="username"/><br/>
-            <label>Password:</label>
-            <input type="password" name="password"/><br/><br/>
-            <button type="submit" name="login" class="btn">Login</button>
-          </p>
-
-        </fieldset>
-      </form>
-
-      <fieldset>
-        <legend>Sign Up</legend>
-
-        <p>
-          If you haven't signed up yet, click here to get started!
-        </p>
-
-        <a href="register.php"><span class="glyphicon glyphicon-triangle-right"></span>Sign Up</a>
-
-      </fieldset>
+    <!-- Center Body -->
+    <div class="col-sm-8 text-center">
+      <div class="panel-profile" >
+        <div class="panel-profile-heading">
+        <h3 class="panel-profile-title">Group Profile</h3>
+        
+        </div>
+        
+        <div class="panel-profile-body">
+          <div class="row">
+            <div class="col-md-3 col-lg-3 " align="center"> 
+              <img alt="Group Pic" src="pictures/Group-Generic-Photo.jpg" style="height: 75%; width: 75%"><br/>
+              <h3>Other People's Group</h3>
+            </div>
+            
+            <div class= "col-md-9 col-lg-9">
+              <table class="table table-user-information">
+                <tbody>
+                  <tr>
+                    <td>
+                      <img src="pictures/Male-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
+                      <h4>Name 1</h4>
+                    </td>
+                    <td>
+                      <img src="pictures/Male-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
+                      <h4>Name 2</h4>
+                    </td>
+                    <td>
+                      <img src="pictures/Male-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
+                      <h4>Name 3</h4>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="pictures/Male-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
+                      <h4>Name 4</h4>
+                    </td>
+                    <td>
+                      <img src="pictures/Male-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
+                      <h4>Name 5</h4>
+                    </td>
+                    <td>
+                      <img src="pictures/Male-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
+                      <h4>Name 6</h4>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Group Name:</td>
+                    <td>Blank</td>
+                  </tr>
+                  <tr>
+                    <td>Group Games:</td>
+                    <td>DnD, Dungeon World, Pathfinder</td>
+                  </tr>
+                  <tr>
+                    <td>Group Meets:</td>
+                    <td>(At Home, Roll20, etc)</td>
+                  </tr>
+                  <tr>
+                    <td>Meeting Times:</td>
+                    <td>Monday at 5:00 PM, Friday at 7:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td>Description:</td>
+                    <td>Blank</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <!-- Right Sidebar -->
     <div class="col-sm-2 sidenav">
       <div class="well">
         <p>ADS</p>
@@ -150,11 +205,13 @@
         <p>ADS</p>
       </div>
     </div>
+
   </div>
 </div>
 
+<!-- Footer -->
 <footer class="container-fluid text-center">
-  <p>Copywrite &copy; Roll For Group 2017</p>
+  <p>Copywrite &copy; Roll For Party 2017</p>
 </footer>
 
 </body>

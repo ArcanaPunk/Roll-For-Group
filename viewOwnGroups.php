@@ -1,8 +1,14 @@
-<?php include('server.php'); ?>
+<?php include('server.php'); 
+
+  //Only users that are logged in can view this page
+  if (empty($_SESSION['username'])) {
+    header('location: login.php');
+  }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Roll For Group</title>
+  <title>Roll For Party: Template</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
@@ -106,42 +112,53 @@
 
   </div>
 </nav>
-  
-<div class="container-fluid text-center">    
+
+<!-- Main Body -->
+<div class="container-fluid text-center">
   <div class="row content">
-  
+
+    <!-- Left Sidebar -->
     <div class="col-sm-2 sidenav" style="height:100%">
+    
+    </div>
+
+    <!-- Center Body -->
+    <div class="col-sm-8 text-left">
+
+      <h2>My Groups:</h2>
+
+      <table style="text-align: center;"">
+        <tr>
+          <td>
+            <img src="pictures/Group-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
+            <h4><a href="viewOwnGroup.html">Group 1</a></h4>
+          </td>
+          <td>
+            <img src="pictures/Group-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
+            <h4>Group 2</h4>
+          </td>
+          <td>
+            <img src="pictures/Group-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
+            <h4>Group 3</h4>
+          </td>
+          <td>
+            <img src="pictures/Group-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
+            <h4>Group 4</h4>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align: left">
+            <a href="#"><span class="glyphicon glyphicon-arrow-left"></span> Previous</a>
+          </td>
+          <td colspan="2" style="text-align: right">
+            <a href="#"><span class="glyphicon glyphicon-arrow-right"></span> Next</a>
+          </td>
+        </tr>
+      </table>
 
     </div>
 
-    <div class="col-sm-8 text-left"> 
-      <form method="post" action="login.php">
-        <fieldset>
-          <legend>Login</legend>
-          <!-- display validation for form fields -->
-          <?php include('errors.php'); ?>
-          <p>
-            <label>Username:</label>
-            <input type="text" name="username"/><br/>
-            <label>Password:</label>
-            <input type="password" name="password"/><br/><br/>
-            <button type="submit" name="login" class="btn">Login</button>
-          </p>
-
-        </fieldset>
-      </form>
-
-      <fieldset>
-        <legend>Sign Up</legend>
-
-        <p>
-          If you haven't signed up yet, click here to get started!
-        </p>
-
-        <a href="register.php"><span class="glyphicon glyphicon-triangle-right"></span>Sign Up</a>
-
-      </fieldset>
-    </div>
+    <!-- Right Sidebar -->
     <div class="col-sm-2 sidenav">
       <div class="well">
         <p>ADS</p>
@@ -150,11 +167,13 @@
         <p>ADS</p>
       </div>
     </div>
+
   </div>
 </div>
 
+<!-- Footer -->
 <footer class="container-fluid text-center">
-  <p>Copywrite &copy; Roll For Group 2017</p>
+  <p>Copywrite &copy; Roll For Party 2017</p>
 </footer>
 
 </body>

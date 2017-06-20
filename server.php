@@ -1,4 +1,6 @@
 <?php
+	session_start();
+
 	$username = "";
 	$email = "";
 	$first_name = "";
@@ -52,7 +54,48 @@
 		if (count($errors) == 0) {
 			//hash the password to store the hashed value
 			$password = hash('sha256', $password_1);
-			$sql = "INSERT INTO User (UserName, Email, Password, FirstName, LastName, Address, City, State, Zip, Country) VALUES ('$username', '$email', '$password', '$first_name', '$last_name', '$address', '$city', '$state', '$zip', '$country')";
+			$sql = "INSERT INTO User (Username, Email, Password, FirstName, LastName, Address, City, State, Zip, Country) VALUES ('$username', '$email', '$password', '$first_name', '$last_name', '$address', '$city', '$state', '$zip', '$country')";
 			mysqli_query($db, $sql);
+			$_SESSION['username'] = $username;
+			$_Session['success'] = "Welcome back!";
+			header('location: home.php'); //Take to home page after login
 		}
 	}
+
+	//login from login.php
+	if (isset($_POST['login'])) {
+		$username = mysqli_real_escape_string($db, $_POST['username']);
+		$password = mysqli_real_escape_string($db, $_POST['password']);
+		
+
+		//validate all fields
+		if (empty($username)) {
+			array_push($errors, "Username is required");
+		}
+		if (empty($password)) {
+			array_push($errors, "Passoword is required");
+		}
+		if (count($errors) == 0 ) {
+			$password = hash('sha256', $password); //encrypt password before comparing with that from database
+			$query = "SELECT * FROM User WHERE Username='$username' AND Password = '$password'";
+			$result = mysqli_query($db, $query);
+			if (mysqli_num_rows($result) == 1) {
+				//log user in
+				$_SESSION['username'] = $username;
+				$_Session['success'] = "Welcome back!";
+				header('location: home.php'); //Take to home page after login
+			}
+			else {
+				array_push($errors, "Incorrect Username and/or Password");
+			}
+		}
+	}
+
+	//logging out
+	if (isset($_GET['logout'])) {
+		session_destroy();
+		unset($_SESSION['username']);
+		header('location: login.php');
+	}
+
+?>
