@@ -1,3 +1,11 @@
+<?php include('server.php'); 
+
+  //Only users that are logged in can view this page
+  if (empty($_SESSION['username'])) {
+    header('location: login.php');
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

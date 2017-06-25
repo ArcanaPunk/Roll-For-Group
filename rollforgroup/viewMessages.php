@@ -1,4 +1,3 @@
-
 <?php include('server.php'); 
 
   //Only users that are logged in can view this page
@@ -6,11 +5,10 @@
     header('location: login.php');
   }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Roll For Party: Players</title>
+  <title>Roll For Party: Template</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
@@ -60,8 +58,8 @@
     }
 
     .playerIcon {
-      height: 50%;
-      width: 50%;
+      height: 33%;
+      width: 33%;
       display: inline-block;
       max-width: 100%;
       height: auto;
@@ -73,6 +71,16 @@
       -webkit-transition: all .2s ease-in-out;
            -o-transition: all .2s ease-in-out;
               transition: all .2s ease-in-out;
+    }
+
+    .clickCell {
+      display:block;
+      width:100%;
+    }
+
+    td a {
+      display:block;
+      width:100%;
     }
 
   </style>
@@ -98,7 +106,7 @@
     <div class="collapse navbar-collapse" id="myNavbar">
 
       <ul class="nav navbar-nav">
-        <li class="active"><a href="players.php">Players</a></li>
+        <li><a href="players.php">Players</a></li>
         <li><a href="group.php">Groups</a></li>
         <li><a href="viewMessages.html">Messages</a></li>
         <li><a href="viewAbout.html">About</a></li>
@@ -121,94 +129,40 @@
 
     <!-- Left Sidebar -->
     <div class="col-sm-2 sidenav" style="height:100%">
-      
+
     </div>
 
     <!-- Center Body -->
     <div class="col-sm-8 text-left">
-    <h2>Browse Players:</h2>
 
-      <table style="text-align: center;"">
-        <tr>
-          <td>
-            <a href="viewOtherPlayer.html">
-              <img src="pictures/Female-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-              <h4>Name 1</h4>
-            </a>
+      <h2>My Messages:</h2><br/>
+      
+      <table>
+        <tr style="border-bottom: solid; border-width: 2px; border-color: #f1f1f1">
+          <td style="text-align: center;" class="col-sm-2">
+            <img src="pictures/Female-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
+            <h4>Name 1</h4>
           </td>
-          <td>
+          <td style="text-align: left;" class="col-sm-6">
+            <a href="viewMessageThread.html">Hello, this is the last message I sent you!</a>
+          </td>
+        </tr>
+        <tr style="border-bottom: solid; border-width: 2px; border-color: #f1f1f1">
+          <td style="text-align: center;" class="col-sm-2">
             <img src="pictures/Male-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
             <h4>Name 2</h4>
           </td>
-          <td>
+          <td style="text-align: left;" class="col-sm-6">
+            Hello, this is the last message I sent you!
+          </td>
+        </tr>
+        <tr style="border-bottom: solid; border-width: 2px; border-color: #f1f1f1">
+          <td style="text-align: center;" class="col-sm-2">
             <img src="pictures/Female-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
             <h4>Name 3</h4>
           </td>
-          <td>
-            <img src="pictures/Female-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Name 4</h4>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <img src="pictures/Male-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Name 5</h4>
-          </td>
-          <td>
-            <img src="pictures/Male-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Name 6</h4>
-          </td>
-          <td>
-            <img src="pictures/Female-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Name 7</h4>
-          </td>
-          <td>
-            <img src="pictures/Male-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Name 8</h4>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <img src="pictures/Female-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Name 9</h4>
-          </td>
-          <td>
-            <img src="pictures/Female-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Name 10</h4>
-          </td>
-          <td>
-            <img src="pictures/Male-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Name 11</h4>
-          </td>
-          <td>
-            <img src="pictures/Male-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Name 12</h4>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <img src="pictures/Male-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Name 13</h4>
-          </td>
-          <td>
-            <img src="pictures/Female-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Name 14</h4>
-          </td>
-          <td>
-            <img src="pictures/Male-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Name 15</h4>
-          </td>
-          <td>
-            <img src="pictures/Female-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Name 16</h4>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2" style="text-align: left">
-            <a href="#"><span class="glyphicon glyphicon-arrow-left"></span> Previous</a>
-          </td>
-          <td colspan="2" style="text-align: right">
-            <a href="#"><span class="glyphicon glyphicon-arrow-right"></span> Next</a>
+          <td style="text-align: left;" class="col-sm-6">
+            Hello, this is the last message I sent you!
           </td>
         </tr>
       </table>

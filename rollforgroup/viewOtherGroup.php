@@ -1,4 +1,3 @@
-
 <?php include('server.php'); 
 
   //Only users that are logged in can view this page
@@ -6,11 +5,10 @@
     header('location: login.php');
   }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Roll For Party: Players</title>
+  <title>Roll For Party: Template</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
@@ -98,7 +96,7 @@
     <div class="collapse navbar-collapse" id="myNavbar">
 
       <ul class="nav navbar-nav">
-        <li class="active"><a href="players.php">Players</a></li>
+        <li><a href="players.php">Players</a></li>
         <li><a href="group.php">Groups</a></li>
         <li><a href="viewMessages.html">Messages</a></li>
         <li><a href="viewAbout.html">About</a></li>
@@ -121,97 +119,81 @@
 
     <!-- Left Sidebar -->
     <div class="col-sm-2 sidenav" style="height:100%">
-      
+
     </div>
 
     <!-- Center Body -->
-    <div class="col-sm-8 text-left">
-    <h2>Browse Players:</h2>
-
-      <table style="text-align: center;"">
-        <tr>
-          <td>
-            <a href="viewOtherPlayer.html">
-              <img src="pictures/Female-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-              <h4>Name 1</h4>
-            </a>
-          </td>
-          <td>
-            <img src="pictures/Male-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Name 2</h4>
-          </td>
-          <td>
-            <img src="pictures/Female-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Name 3</h4>
-          </td>
-          <td>
-            <img src="pictures/Female-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Name 4</h4>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <img src="pictures/Male-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Name 5</h4>
-          </td>
-          <td>
-            <img src="pictures/Male-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Name 6</h4>
-          </td>
-          <td>
-            <img src="pictures/Female-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Name 7</h4>
-          </td>
-          <td>
-            <img src="pictures/Male-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Name 8</h4>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <img src="pictures/Female-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Name 9</h4>
-          </td>
-          <td>
-            <img src="pictures/Female-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Name 10</h4>
-          </td>
-          <td>
-            <img src="pictures/Male-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Name 11</h4>
-          </td>
-          <td>
-            <img src="pictures/Male-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Name 12</h4>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <img src="pictures/Male-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Name 13</h4>
-          </td>
-          <td>
-            <img src="pictures/Female-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Name 14</h4>
-          </td>
-          <td>
-            <img src="pictures/Male-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Name 15</h4>
-          </td>
-          <td>
-            <img src="pictures/Female-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Name 16</h4>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2" style="text-align: left">
-            <a href="#"><span class="glyphicon glyphicon-arrow-left"></span> Previous</a>
-          </td>
-          <td colspan="2" style="text-align: right">
-            <a href="#"><span class="glyphicon glyphicon-arrow-right"></span> Next</a>
-          </td>
-        </tr>
-      </table>
+    <div class="col-sm-8 text-center">
+      <div class="panel-profile" >
+        <div class="panel-profile-heading">
+        <h3 class="panel-profile-title">Group Profile</h3>
+        
+        </div>
+        
+        <div class="panel-profile-body">
+          <div class="row">
+            <div class="col-md-3 col-lg-3 " align="center"> 
+              <img alt="Group Pic" src="pictures/Group-Generic-Photo.jpg" style="height: 75%; width: 75%"><br/>
+              <h3>Other People's Group</h3>
+            </div>
+            
+            <div class= "col-md-9 col-lg-9">
+              <table class="table table-user-information">
+                <tbody>
+                  <tr>
+                    <td>
+                      <img src="pictures/Male-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
+                      <h4>Name 1</h4>
+                    </td>
+                    <td>
+                      <img src="pictures/Male-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
+                      <h4>Name 2</h4>
+                    </td>
+                    <td>
+                      <img src="pictures/Male-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
+                      <h4>Name 3</h4>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="pictures/Male-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
+                      <h4>Name 4</h4>
+                    </td>
+                    <td>
+                      <img src="pictures/Male-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
+                      <h4>Name 5</h4>
+                    </td>
+                    <td>
+                      <img src="pictures/Male-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
+                      <h4>Name 6</h4>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Group Name:</td>
+                    <td>Blank</td>
+                  </tr>
+                  <tr>
+                    <td>Group Games:</td>
+                    <td>DnD, Dungeon World, Pathfinder</td>
+                  </tr>
+                  <tr>
+                    <td>Group Meets:</td>
+                    <td>(At Home, Roll20, etc)</td>
+                  </tr>
+                  <tr>
+                    <td>Meeting Times:</td>
+                    <td>Monday at 5:00 PM, Friday at 7:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td>Description:</td>
+                    <td>Blank</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Right Sidebar -->
