@@ -1,4 +1,6 @@
+
 <?php include('server.php'); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -115,6 +117,7 @@
     </div>
 
     <div class="col-sm-8 text-left"> 
+
       <form method="post" action="login.php">
         <fieldset>
           <legend>Login</legend>
@@ -126,6 +129,18 @@
             <label>Password:</label>
             <input type="password" name="password"/><br/><br/>
             <button type="submit" name="login" class="btn">Login</button>
+
+      <form>
+        <fieldset>
+          <legend>Login</legend>
+
+          <p>
+            <label>Username:</label>
+            <input type="text" name="user_name"/><br/>
+            <label>Password:</label>
+            <input type="password" name="pass_word"/><br/><br/>
+            <input type="submit" value="Submit"/>
+
           </p>
 
         </fieldset>

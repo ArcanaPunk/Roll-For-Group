@@ -1,4 +1,5 @@
 <?php
+
 	session_start();
 
 	$username = "";
@@ -54,6 +55,7 @@
 		if (count($errors) == 0) {
 			//hash the password to store the hashed value
 			$password = hash('sha256', $password_1);
+
 			$sql = "INSERT INTO User (Username, Email, Password, FirstName, LastName, Address, City, State, Zip, Country) VALUES ('$username', '$email', '$password', '$first_name', '$last_name', '$address', '$city', '$state', '$zip', '$country')";
 			mysqli_query($db, $sql);
 			$_SESSION['username'] = $username;
@@ -99,3 +101,9 @@
 	}
 
 ?>
+
+			$sql = "INSERT INTO User (UserName, Email, Password, FirstName, LastName, Address, City, State, Zip, Country) VALUES ('$username', '$email', '$password', '$first_name', '$last_name', '$address', '$city', '$state', '$zip', '$country')";
+			mysqli_query($db, $sql);
+		}
+	}
+

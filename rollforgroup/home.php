@@ -1,3 +1,4 @@
+
 <?php include('server.php'); 
 
   //Only users that are logged in can view this page
@@ -5,6 +6,7 @@
     header('location: login.php');
   }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -121,6 +123,7 @@
     </div>
 
     <div class="col-sm-8 text-left"> 
+
       <div>
       <?php if (isset($_SESSION['success'])): ?>
 
@@ -139,7 +142,7 @@
         <a href="home.php?logout='1'" style="color: red;">Logout</a>
       <?php endif ?>
     </div>
-
+      
       <h1>Welcome</h1>
       <p>Roll For Party is a tabletop matchmaker. Whether you are a veteran player or someone who is looking for their first adventure we've got your back! <br/><br/>
 

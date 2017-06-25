@@ -122,10 +122,17 @@
             <?php include('errors.php'); ?>
             <p>
               <label>Username:</label>
+
               <input type="text" name="username" value="<?php echo $username; ?>"/><br/>
 
               <label>Email:</label>
               <input type="text" name="email" value="<?php echo $email; ?>"/><br/>
+
+              <input type="text" name="username"/><br/>
+
+              <label>Email:</label>
+              <input type="text" name="email"/><br/>
+
 
               <label>Password:</label>
               <input type="password" name="password_1"/><br/>
@@ -134,10 +141,17 @@
               <input type="password" name="password_2"/><br/>
 
               <label>First Name:</label>
+
               <input type="text" name="first_name" value="<?php echo $first_name; ?>"/><br/>
 
               <label>Last Name:</label>
               <input type="text" name="last_name" value="<?php echo $last_name; ?>"/><br/>
+
+              <input type="text" name="first_name"/><br/>
+
+              <label>Last Name:</label>
+              <input type="text" name="last_name"/><br/>
+
 
               <label>Address:</label>
               <input type="text" name="address"><br/>
