@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Roll For Party: Players</title>
+  <title>Roll For Party: Template</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
@@ -96,17 +96,21 @@
     <div class="collapse navbar-collapse" id="myNavbar">
 
       <ul class="nav navbar-nav">
-        <li class="active"><a href="players.php">Players</a></li>
+        <li><a href="players.php">Players</a></li>
         <li><a href="group.php">Groups</a></li>
-        <li><a href="viewMessages.html">Messages</a></li>
-        <li><a href="viewAbout.html">About</a></li>
+        <li><a href="viewMessages.php">Messages</a></li>
+        <li><a href="viewAbout.php">About</a></li>
       </ul>
 
       <!-- My Profile and My Group Button and Login -->
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="profile.html"><span class="glyphicon glyphicon-user"></span> My Profile</a></li>
-        <li><a href="viewOwnGroups.html"><span class="glyphicon glyphicon-th-large"></span> My Groups</a></li>
-        <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="profile.php"><span class="glyphicon glyphicon-user"></span> My Profile</a></li>
+        <li><a href="viewOwnGroups.php"><span class="glyphicon glyphicon-th-large"></span> My Groups</a></li>
+        <?php if(isset($_SESSION['username'])): ?>
+          <li><a href="home.php?logout='1'"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+        <?php else: ?>
+          <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <?php endif; ?>
       </ul>
     </div>
 
@@ -119,107 +123,50 @@
 
     <!-- Left Sidebar -->
     <div class="col-sm-2 sidenav" style="height:100%">
-      
+    
     </div>
 
     <!-- Center Body -->
     <div class="col-sm-8 text-left">
-    <h2>Browse Players:</h2>
+
+      <h2>My Groups:</h2>
 
       <table style="text-align: center;"">
         <tr>
           <td>
-            <a href="viewOtherPlayer.html">
-              <img src="pictures/Female-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-              <h4>Name 1</h4>
-            </a>
+            <img src="pictures/Group-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
+            <h4><a href="viewOwnGroup.php">Group 1</a></h4>
           </td>
           <td>
-            <img src="pictures/Male-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Name 2</h4>
+            <img src="pictures/Group-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
+            <h4>Group 2</h4>
           </td>
           <td>
-            <img src="pictures/Female-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Name 3</h4>
+            <img src="pictures/Group-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
+            <h4>Group 3</h4>
           </td>
           <td>
-            <img src="pictures/Female-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Name 4</h4>
+            <img src="pictures/Group-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
+            <h4>Group 4</h4>
           </td>
         </tr>
         <tr>
-          <td>
-            <img src="pictures/Male-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Name 5</h4>
-          </td>
-          <td>
-            <img src="pictures/Male-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Name 6</h4>
-          </td>
-          <td>
-            <img src="pictures/Female-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Name 7</h4>
-          </td>
-          <td>
-            <img src="pictures/Male-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Name 8</h4>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <img src="pictures/Female-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Name 9</h4>
-          </td>
-          <td>
-            <img src="pictures/Female-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Name 10</h4>
-          </td>
-          <td>
-            <img src="pictures/Male-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Name 11</h4>
-          </td>
-          <td>
-            <img src="pictures/Male-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Name 12</h4>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <img src="pictures/Male-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Name 13</h4>
-          </td>
-          <td>
-            <img src="pictures/Female-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Name 14</h4>
-          </td>
-          <td>
-            <img src="pictures/Male-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Name 15</h4>
-          </td>
-          <td>
-            <img src="pictures/Female-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Name 16</h4>
-          </td>
-        </tr>
-        <tr>
+        <!--
           <td colspan="2" style="text-align: left">
             <a href="#"><span class="glyphicon glyphicon-arrow-left"></span> Previous</a>
           </td>
           <td colspan="2" style="text-align: right">
             <a href="#"><span class="glyphicon glyphicon-arrow-right"></span> Next</a>
           </td>
+        -->
         </tr>
       </table>
+
     </div>
 
     <!-- Right Sidebar -->
     <div class="col-sm-2 sidenav">
-      <div class="well">
-        <p>ADS</p>
-      </div>
-      <div class="well">
-        <p>ADS</p>
-      </div>
+      
     </div>
 
   </div>

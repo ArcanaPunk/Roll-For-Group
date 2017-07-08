@@ -73,16 +73,6 @@
               transition: all .2s ease-in-out;
     }
 
-    .clickCell {
-      display:block;
-      width:100%;
-    }
-
-    td a {
-      display:block;
-      width:100%;
-    }
-
   </style>
 </head>
 <body>
@@ -108,15 +98,19 @@
       <ul class="nav navbar-nav">
         <li><a href="players.php">Players</a></li>
         <li><a href="group.php">Groups</a></li>
-        <li><a href="viewMessages.html">Messages</a></li>
-        <li><a href="viewAbout.html">About</a></li>
+        <li><a href="viewMessages.php">Messages</a></li>
+        <li><a href="viewAbout.php">About</a></li>
       </ul>
 
       <!-- My Profile and My Group Button and Login -->
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="profile.html"><span class="glyphicon glyphicon-user"></span> My Profile</a></li>
-        <li><a href="viewOwnGroups.html"><span class="glyphicon glyphicon-th-large"></span> My Groups</a></li>
-        <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="profile.php"><span class="glyphicon glyphicon-user"></span> My Profile</a></li>
+        <li><a href="viewOwnGroups.php"><span class="glyphicon glyphicon-th-large"></span> My Groups</a></li>
+        <?php if(isset($_SESSION['username'])): ?>
+          <li><a href="home.php?logout='1'"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+        <?php else: ?>
+          <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <?php endif; ?>
       </ul>
     </div>
 
@@ -135,47 +129,52 @@
     <!-- Center Body -->
     <div class="col-sm-8 text-left">
 
-      <h2>My Messages:</h2><br/>
+      <h2>Messages with Name 1:</h2><br/>
       
       <table>
-        <tr style="border-bottom: solid; border-width: 2px; border-color: #f1f1f1">
-          <td style="text-align: center;" class="col-sm-2">
+         <tr style="border-bottom: solid; border-width: 2px; border-color: #f1f1f1;">
+          <td style="text-align: center; padding-top: 20px" class="col-sm-2">
             <img src="pictures/Female-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
             <h4>Name 1</h4>
           </td>
           <td style="text-align: left;" class="col-sm-6">
-            <a href="viewMessageThread.html">Hello, this is the last message I sent you!</a>
+            Hey, lets play some DnD!!
           </td>
         </tr>
-        <tr style="border-bottom: solid; border-width: 2px; border-color: #f1f1f1">
-          <td style="text-align: center;" class="col-sm-2">
+         <tr style="border-bottom: solid; border-width: 2px; border-color: #f1f1f1;">
+          <td style="text-align: center; padding-top: 20px;" class="col-sm-2">
             <img src="pictures/Male-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Name 2</h4>
+            <h4>You</h4>
           </td>
           <td style="text-align: left;" class="col-sm-6">
-            Hello, this is the last message I sent you!
+            Sounds good to me!
           </td>
         </tr>
-        <tr style="border-bottom: solid; border-width: 2px; border-color: #f1f1f1">
-          <td style="text-align: center;" class="col-sm-2">
+         <tr style="border-bottom: solid; border-width: 2px; border-color: #f1f1f1;">
+          <td style="text-align: center; padding-top: 20px;" class="col-sm-2">
+            <img src="pictures/Female-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
+            <h4>Name 1</h4>
+          </td>
+          <td style="text-align: left;" class="col-sm-6">
+            Awesome, lets meet tomorrow!
+          </td>
+        </tr>
+         <tr style="border-bottom: solid; border-width: 2px; border-color: #f1f1f1;">
+          <td style="text-align: center; padding-top: 20px;" class="col-sm-2">
             <img src="pictures/Female-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
             <h4>Name 3</h4>
           </td>
           <td style="text-align: left;" class="col-sm-6">
-            Hello, this is the last message I sent you!
+            Hello, this is the last message I sent you!<br/>
           </td>
         </tr>
       </table>
+
     </div>
 
     <!-- Right Sidebar -->
     <div class="col-sm-2 sidenav">
-      <div class="well">
-        <p>ADS</p>
-      </div>
-      <div class="well">
-        <p>ADS</p>
-      </div>
+      
     </div>
 
   </div>

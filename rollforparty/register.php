@@ -92,14 +92,14 @@
       <ul class="nav navbar-nav">
         <li><a href="players.php">Players</a></li>
         <li><a href="group.php">Groups</a></li>
-        <li><a href="viewMessages.html">Messages</a></li>
-        <li><a href="viewAbout.html">About</a></li>
+        <li><a href="viewMessages.php">Messages</a></li>
+        <li><a href="viewAbout.php">About</a></li>
       </ul>
 
       <!-- My Profile and My Group Button and Login -->
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="profile.html"><span class="glyphicon glyphicon-user"></span> My Profile</a></li>
-        <li><a href="viewOwnGroups.html"><span class="glyphicon glyphicon-th-large"></span> My Groups</a></li>
+        <li><a href="profile.php"><span class="glyphicon glyphicon-user"></span> My Profile</a></li>
+        <li><a href="viewOwnGroups.php"><span class="glyphicon glyphicon-th-large"></span> My Groups</a></li>
         <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       </ul>
     </div>
