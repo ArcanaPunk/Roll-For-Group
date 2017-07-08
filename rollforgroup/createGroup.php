@@ -123,46 +123,104 @@
 
     <!-- Left Sidebar -->
     <div class="col-sm-2 sidenav" style="height:100%">
-
-    <h3><a href="createGroup.php">Create a Group</a></h3>
     
     </div>
 
     <!-- Center Body -->
     <div class="col-sm-8 text-left">
 
-      <h2>My Groups:</h2>
+      <form method="post" action="createGroup.php">
 
-      <table style="text-align: center;"">
-        <tr>
-          <td>
-            <img src="pictures/Group-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4><a href="viewOwnGroup.php">Group 1</a></h4>
-          </td>
-          <td>
-            <img src="pictures/Group-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Group 2</h4>
-          </td>
-          <td>
-            <img src="pictures/Group-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Group 3</h4>
-          </td>
-          <td>
-            <img src="pictures/Group-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Group 4</h4>
-          </td>
-        </tr>
-        <tr>
-        <!--
-          <td colspan="2" style="text-align: left">
-            <a href="#"><span class="glyphicon glyphicon-arrow-left"></span> Previous</a>
-          </td>
-          <td colspan="2" style="text-align: right">
-            <a href="#"><span class="glyphicon glyphicon-arrow-right"></span> Next</a>
-          </td>
-        -->
-        </tr>
-      </table>
+        <fieldset>
+          
+          <legend>Create Group</legend>
+
+          <p>
+            <label>Group Name:</label><br/>
+            <input type="text" name="name" id="gName"><br/><br/>
+
+            <label>Players:</label><br/>
+            <input type="text" name="players" id="players" placeholder="Usernames, separated by commas." size="50"><br/><br/>
+
+            <label>Games:</label><br/>
+            <select id="Game">
+              <option value="Default">Select a game.</option>
+              <option value="Dungeons and Dragons">Dungeons and Dragons</option>
+              <option value="Munchkin">Munchkin</option>
+              <option value="Pathfinder">Pathfinder</option>
+              <option value="Dungeon World">Dungeon World</option>
+            </select><br/>
+            To be filled in with a game database table thing.
+            <br/><br/>
+
+
+            <label>Meet at:</label><br/>
+            <select id="meetAt">
+              <option value="Default">Select a Place</option>
+              <option value="home">At a player's place.</option>
+              <option value="gameStore">At a game store.</option>
+              <option value="online">Online</option>
+            </select><br/><br/>
+
+            <label>Times:</label><br/>
+            <label>1</label>
+            <select id="day1">
+              <option value="Default">Day</option>
+              <option value="Sunday">Sunday</option>
+              <option value="Monday">Monday</option>
+              <option value="Tuesday">Tuesday</option>
+              <option value="Wednesday">Wednesday</option>
+              <option value="Thursday">Thursday</option>
+              <option value="Friday">Friday</option>
+              <option value="Saturday">Saturday</option>
+            </select>
+            <label>Start Time:</label>
+            <input type="time" name="startTime1" id="startTime1">
+            <label>End Time:</label>
+            <input type="time" name="endTime1" id="endTime1">
+            <br/>
+
+            <label>2</label>
+            <select id="day2">
+              <option value="Default">Day</option>
+              <option value="Sunday">Sunday</option>
+              <option value="Monday">Monday</option>
+              <option value="Tuesday">Tuesday</option>
+              <option value="Wednesday">Wednesday</option>
+              <option value="Thursday">Thursday</option>
+              <option value="Friday">Friday</option>
+              <option value="Saturday">Saturday</option>
+            </select>
+            <label>Start Time:</label>
+            <input type="time" name="startTime2" id="startTime2">
+            <label>End Time:</label>
+            <input type="time" name="endTime2" id="endTime2">
+            <br/>
+
+            <label>3</label>
+            <select id="day3">
+              <option value="Default">Day</option>
+              <option value="Sunday">Sunday</option>
+              <option value="Monday">Monday</option>
+              <option value="Tuesday">Tuesday</option>
+              <option value="Wednesday">Wednesday</option>
+              <option value="Thursday">Thursday</option>
+              <option value="Friday">Friday</option>
+              <option value="Saturday">Saturday</option>
+            </select>
+            <label>Start Time:</label>
+            <input type="time" name="startTime3" id="startTime3">
+            <label>End Time:</label>
+            <input type="time" name="endTime3" id="endTime3">
+            <br/><br/>
+
+            <button type="submit" name="submit" class="btn">Submit</button>
+
+          </p>
+
+        </fieldset>
+        
+      </form>
 
     </div>
 
