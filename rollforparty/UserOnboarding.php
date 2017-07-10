@@ -123,46 +123,46 @@
 
     <!-- Left Sidebar -->
     <div class="col-sm-2 sidenav" style="height:100%">
-
-    <h3><a href="createGroup.php">Create a Group</a></h3>
     
     </div>
 
     <!-- Center Body -->
     <div class="col-sm-8 text-left">
 
-      <h2>My Groups:</h2>
+      <form method="post" action="UserOnboarding.php">
+          <fieldset>
+            <legend>Sign Up</legend>
+              <!-- display validation for form fields -->
+              <?php include('errors.php'); ?>
+              <p>
+                <label>First Name:</label>
+                <input type="text" name="first_name" value="<?php echo $first_name; ?>"/><br/>
 
-      <table style="text-align: center;"">
-        <tr>
-          <td>
-            <img src="pictures/Group-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4><a href="viewOwnGroup.php">Group 1</a></h4>
-          </td>
-          <td>
-            <img src="pictures/Group-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Group 2</h4>
-          </td>
-          <td>
-            <img src="pictures/Group-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Group 3</h4>
-          </td>
-          <td>
-            <img src="pictures/Group-Generic-Photo.jpg" alt="IMG" class="playerIcon"/><br/>
-            <h4>Group 4</h4>
-          </td>
-        </tr>
-        <tr>
-        <!--
-          <td colspan="2" style="text-align: left">
-            <a href="#"><span class="glyphicon glyphicon-arrow-left"></span> Previous</a>
-          </td>
-          <td colspan="2" style="text-align: right">
-            <a href="#"><span class="glyphicon glyphicon-arrow-right"></span> Next</a>
-          </td>
-        -->
-        </tr>
-      </table>
+                <label>Last Name:</label>
+                <input type="text" name="last_name" value="<?php echo $last_name; ?>"/><br/>
+
+                <label>Profile Pic:</label>
+                <input type="file" name="profile_pic"><br/>
+
+                <label>Address:</label>
+                <input type="text" name="address"><br/>
+
+                <label>City:</label>
+                <input type="text" name="city"><br/>
+
+                <label>State:</label>
+                <input type="text" name="state" value="Full State Name"><br/>
+
+                <label>Zip Code:</label>
+                <input type="text" name="zip"><br/>
+
+                <label>Country:</label>
+                <input type="text" name="country" value="Full Country Name"><br/><br/>
+
+                <button type="submit" name="finish" class="btn">Finish</button>
+              </p>
+          </fieldset>
+        </form>
 
     </div>
 

@@ -15,7 +15,7 @@
 	//Connect to the database
 	$db = mysqli_connect('localhost', 'root', 'P@55w0rd', 'rollforgroup') or die($db);
 
-	//if the submit button is clicked
+	//if the submit button is fired
 	if(isset($_POST['submit'])) {
 		$username = mysqli_real_escape_string($db, $_POST['username']);
 		$email = mysqli_real_escape_string($db, $_POST['email']);
