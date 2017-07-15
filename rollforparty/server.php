@@ -156,12 +156,8 @@
         	$country = $row['Country'];
         }
        	echo '   <tr>
-                    <td>First Name:</td>
-                    <td>'.$firstname.'</td>
-                  </tr>
-                  <tr>
-                    <td>Last Name:</td>
-                    <td>'.$lastname.'</td>
+                    <td>Name:</td>
+                    <td>'.$firstname. ' ' . $lastname . '</td>
                   </tr>
                   <tr>
                     <td>Email:</td>
@@ -186,6 +182,10 @@
                   <tr>
                     <td>Country:</td>
                     <td>'.$country.'</td>
+                  </tr>
+                  <tr>
+                  	<td>Description:</td>
+                  	<td> Once Descriptions are set up add them here. </td>
                   </tr>';
     }
 

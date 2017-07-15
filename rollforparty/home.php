@@ -98,7 +98,6 @@
       <ul class="nav navbar-nav">
         <li><a href="players.php">Players</a></li>
         <li><a href="group.php">Groups</a></li>
-        <li><a href="viewMessages.php">Messages</a></li>
         <li><a href="viewAbout.php">About</a></li>
       </ul>
 

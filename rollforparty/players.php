@@ -1,4 +1,6 @@
-<?php include('server.php'); 
+<?php 
+	// include('server.php'); 
+	include('playersServer.php');
 
   //Only users that are logged in can view this page
   if (empty($_SESSION['username'])) {
@@ -73,6 +75,15 @@
               transition: all .2s ease-in-out;
     }
 
+    .h4Player {
+      font-size: 18px;
+      border: solid;
+      border-color: #f1f1f1;
+      border-radius: 5px;
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+
   </style>
 </head>
 <body>
@@ -98,7 +109,6 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="players.php">Players</a></li>
         <li><a href="group.php">Groups</a></li>
-        <li><a href="viewMessages.php">Messages</a></li>
         <li><a href="viewAbout.php">About</a></li>
       </ul>
 
@@ -122,7 +132,92 @@
   <div class="row content">
 
     <!-- Left Sidebar -->
-    <div class="col-sm-2 sidenav" style="height:100%">
+    <div class="col-sm-2 sidenav" style="height:100%" align="left">
+
+    	<form id="updateSearch" method="post">
+
+          <fieldset>
+
+            <legend>Search Users</legend>
+
+              <table>
+
+                <!-- Form box for City -->
+                <tr height="40">
+                  <td width="30%"> <label>City:</label> </td>
+                  <td><input type="text" name="city" id="city" class="form-control"/></td>
+                </tr>
+
+                <!-- Form box for State -->
+                <tr height="40">
+                  <td width="30%"> <label>State:</label> </td>
+                  <td><input type="text" name="state" id="state" value="Full State Name" class="form-control"/></td>
+                </tr>
+
+                <!-- Form box for Game, is filled from the DB -->
+                <tr height="40">
+                  <td width="30%"> <label>Game:</label> </td>
+                  <td>
+                    <select name="GameID" id="game" class="form-control">
+                      <?php echo $options;?>
+                    </select>
+                  </td>
+                </tr>
+
+                <!-- Form box for Metting Place -->
+                <tr height="40">
+                  <td width="30%"> <label>Meet at:</label> </td>
+                  <td>
+                    <select name="Location" id="meet" class="form-control">
+                      <option value="Default">Select a Place</option>
+                      <option value="home">At a player's place.</option>
+                      <option value="gameStore">At a game store.</option>
+                      <option value="online">Online</option>
+                    </select>
+                  </td>
+                </tr>
+              
+                <!-- Form box for Day -->
+                <tr height="40">
+                  <td width="30%"> <label>Day:</label> </td>
+                  <td> 
+                    <select name="day" id="day" class="form-control">
+                      <option value="Default">Day</option>
+                      <option value="Sunday">Sunday</option>
+                      <option value="Monday">Monday</option>
+                      <option value="Tuesday">Tuesday</option>
+                      <option value="Wednesday">Wednesday</option>
+                      <option value="Thursday">Thursday</option>
+                      <option value="Friday">Friday</option>
+                      <option value="Saturday">Saturday</option>
+                    </select>
+                  </td>
+                </tr>
+
+                <!-- Form box for Time -->
+                <tr height="40">
+                  <td width="30%"> <label>Time:</label> </td>
+                  <td>
+                    <select name="time" id="time" class="form-control">
+                      <option value="Default">Select a Time</option>
+                      <option value="Morning">Morning</option>
+                      <option value="Afternoon">Afternoon</option>
+                      <option value="Evening">Evening</option>
+                      <option value="Night">Night</option>
+                    </select>
+                  </td>
+                </tr>
+
+                <tr height="40">
+                  <td width="50%" align="center"> <button type="submit" name="submitSearch" id="submit" class="btn">Search</button> </td>
+                  <td align="center"> <button type="reset" class="btn">Reset</button> </td>
+                </tr>
+
+              </table>
+
+          </fieldset>
+
+        </form>
       
     </div>
 
@@ -132,8 +227,10 @@
 
       <table style="text-align: center;"">
 
-        <?php 
-          loadplayer();
+        <?php
+
+          echo $display;
+  
         ?>
 
         <tr>

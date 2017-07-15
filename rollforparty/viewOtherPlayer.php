@@ -1,4 +1,4 @@
-<?php include('server.php'); 
+<?php include('viewOtherPlayerServer.php'); 
 
   //Only users that are logged in can view this page
   if (empty($_SESSION['username'])) {
@@ -145,7 +145,6 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="players.php">Players</a></li>
         <li><a href="group.php">Groups</a></li>
-        <li><a href="viewMessages.php">Messages</a></li>
         <li><a href="viewAbout.php">About</a></li>
       </ul>
 
@@ -180,43 +179,17 @@
         <h3 class="panel-profile-title">User Profile</h3>
         
         </div>
+
+        <?php 
+
+        echo $display;
+
+        ?>
         
-        <div class="panel-profile-body">
-          <div class="row">
-            <div class="col-md-3 col-lg-3 " align="center"> <img alt="User Pic" src="pictures/Female-Generic-Photo.jpg""> </div>
-            
-            <div class= "col-md-9 col-lg-9">
-              <table class="table table-user-information">
-                <tbody>
-                  <tr>
-                    <td>First Name:</td>
-                    <td>Name</td>
-                  </tr>
-                  <tr>
-                    <td>Last Name:</td>
-                    <td>1</td>
-                  </tr>
-                  <tr>
-                    <td>Location:</td>
-                    <td>City, State</td>
-                  </tr>
-                  <tr>
-                    <td>Games I play:</td>
-                    <td>DnD, Munchkin</td>
-                  </tr>
-                  <tr>
-                    <td>Description:</td>
-                    <td>Blank</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
+
         <div class="panel-profile-footer">
-                        <a href="viewMessageThread.php" data-original-title="Edit this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-warning"><i class="glyphicon glyphicon-comment"></i></a>
-                        
-                    </div>
+               <p></p>
+        </div>
       </div>
     </div>
 

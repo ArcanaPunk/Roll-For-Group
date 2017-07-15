@@ -145,7 +145,6 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="players.php">Players</a></li>
         <li><a href="group.php">Groups</a></li>
-        <li><a href="viewMessages.php">Messages</a></li>
         <li><a href="viewAbout.php">About</a></li>
       </ul>
 
@@ -170,6 +169,8 @@
 
     <!-- Left Sidebar -->
     <div class="col-sm-2 sidenav" style="height:100%">
+
+      <h3><a href="#">Edit Group</a></h3>
   
     </div>
 
@@ -245,9 +246,8 @@
           </div>
         </div>
         <div class="panel-profile-footer">
-                        <a href="#" data-original-title="Edit this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-warning"><i class="glyphicon glyphicon-edit"></i></a>
                         
-                    </div>
+        </div>
       </div>
     </div>
 

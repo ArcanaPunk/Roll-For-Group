@@ -53,13 +53,61 @@
       .row.content {height:auto;}
     }
 
+    .panel-profile {
+      margin-bottom: 20px;
+      margin-top: 20px;
+      background-color: #fff;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+              box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    }
+
+    .panel-profile-body {
+      padding: 15px;
+    }
+    .panel-profile-heading {
+      padding: 10px 15px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+
+        color: #000000;
+        background-color: #f1f1f1;
+        border-color: #000000;
+    }
+    .panel-profile-heading > .dropdown .dropdown-toggle {
+      color: inherit;
+    }
+    .panel-profile-title {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 16px;
+      color: inherit;
+    }
+    .panel-profile-title > a,
+    .panel-profile-title > small,
+    .panel-profile-title > .small,
+    .panel-profile-title > small > a,
+    .panel-profile-title > .small > a {
+      color: inherit;
+    }
+    .panel-profile-footer {
+      padding: 10px 15px;
+      text-align: right;
+      background-color: #f5f5f5;
+      border-top: 1px solid #ddd;
+      border-bottom-right-radius: 3px;
+      border-bottom-left-radius: 3px;
+    }
+
     .piTable {
       text-align: center;
     }
 
     .playerIcon {
-      height: 50%;
-      width: 50%;
+      height: 30%;
+      width: 30%;
       display: inline-block;
       max-width: 100%;
       height: auto;
@@ -98,7 +146,6 @@
       <ul class="nav navbar-nav">
         <li><a href="players.php">Players</a></li>
         <li><a href="group.php">Groups</a></li>
-        <li><a href="viewMessages.php">Messages</a></li>
         <li><a href="viewAbout.php">About</a></li>
       </ul>
 
@@ -129,8 +176,10 @@
     <!-- Center Body -->
     <div class="col-sm-8 text-center">
       <div class="panel-profile" >
+
         <div class="panel-profile-heading">
-        <h3 class="panel-profile-title">Group Profile</h3>
+
+          <h3 class="panel-profile-title">Group Profile</h3>
         
         </div>
         
@@ -197,6 +246,11 @@
             </div>
           </div>
         </div>
+
+        <div class="panel-profile-footer">
+               <p></p>
+        </div>
+
       </div>
     </div>
 

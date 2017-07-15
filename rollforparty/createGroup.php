@@ -100,7 +100,6 @@
       <ul class="nav navbar-nav">
         <li><a href="players.php">Players</a></li>
         <li><a href="group.php">Groups</a></li>
-        <li><a href="viewMessages.php">Messages</a></li>
         <li><a href="viewAbout.php">About</a></li>
       </ul>
 
@@ -124,7 +123,7 @@
   <div class="row content">
 
     <!-- Left Sidebar -->
-    <div class="col-sm-2 sidenav" style="height:100%">
+    <div class="col-sm-2 sidenav" style="height:100%" align="left">
     
     </div>
 
@@ -147,6 +146,7 @@
             <label>Games:</label><br/>
 
             <select name="GameID" id="game">
+              <option value="Default">Select a Game</option>
               <?php echo $options;?>
             </select>
             <br/><br/>
